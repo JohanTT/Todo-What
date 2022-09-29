@@ -10,8 +10,8 @@ import { TodoContextProvider } from './contexts/TodoContext';
 
 function App() {
   return (
-    <div className="todo-what">
-      <MyContextProvider>
+    <div className="todo-app">
+      {/* <MyContextProvider>
         <BrowserRouter>
         <nav>
           <Link to='/About'>About</Link>
@@ -25,11 +25,11 @@ function App() {
               <Route exact path='/Login' element={ <Login/> } />
               <Route exact path='/About' element={ <About /> } />
             </Routes>
-            <TodoList></TodoList>
           </TodoContextProvider>
 
         </BrowserRouter>
-      </MyContextProvider>
+      </MyContextProvider> */}
+            <TodoList></TodoList>
     </div>
   );
 }
