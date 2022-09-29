@@ -16,7 +16,7 @@ const initTask = [
 ];
 
 export const TodoContextProvider = ({children}) => {
-    const [tasks, setTasks] = useState([initTask]);
+    const [tasks, setTasks] = useState(initTask);
     return (
         <TodoContext.Provider value={{
             tasks,
@@ -26,3 +26,4 @@ export const TodoContextProvider = ({children}) => {
         </TodoContext.Provider>
     )
 }
+

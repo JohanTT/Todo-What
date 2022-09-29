@@ -26,7 +26,6 @@ function Home() {
                 <h2>{item.name}</h2>
             </div>
         ))}
-
     </div>
   )
 }

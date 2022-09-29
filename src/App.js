@@ -19,13 +19,11 @@ function App() {
           <Link to='/Home'>Home</Link>
         </nav>
           <TodoContextProvider>
-            
             <Routes>
               <Route exact path='/Home' element={ <HomePage/> } />
               <Route exact path='/' element={ <HomePage/> } />
               <Route exact path='/Login' element={ <Login/> } />
               <Route exact path='/About' element={ <About /> } />
-              
             </Routes>
             <TodoList></TodoList>
           </TodoContextProvider>
