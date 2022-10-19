@@ -1,10 +1,14 @@
-import React, {useState} from 'react'
+import React, { useContext, useState } from 'react';
 import Todo from './Todo';
-import TodoForm from './TodoForm'
+import TodoForm from './TodoForm';
+import { MyContext } from '../../contexts/MyContext';
+import '../../css/todo.css';
+
 
 
 function TodoList() {
     const [todos, setTodos] = useState([]);
+    const { setUsername, setIsLogged, setPassWork, username, passwork, isLogged } = useContext(MyContext);
 
     // Hàm add todo thêm task mới vào todo app
     const addTodo = todo => {
@@ -43,8 +47,8 @@ function TodoList() {
     };
 
   return (
-    <div>
-        <h1>To do what? What's your purpose</h1>
+    <div class="todo-app">
+        <h1>An nhong {username} </h1>
         <TodoForm
             onSubmit={addTodo}
         />

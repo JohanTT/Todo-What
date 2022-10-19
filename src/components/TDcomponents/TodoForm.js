@@ -1,4 +1,5 @@
 import React, {useState, useEffect, useRef} from 'react'
+import '../../css/todo.css';
 
 function TodoForm(props) {
   const [input, setInput] = useState(props.edit ? props.edit.value : ''); // tạo próp để bắt lấy giá trị hiện tại

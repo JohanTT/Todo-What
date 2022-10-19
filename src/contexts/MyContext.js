@@ -1,10 +1,10 @@
 import { createContext, useState } from "react";
-import { Provider } from "react";
+// import { Provider } from "react";
 
 // Init value
 export const MyContext = createContext({
-    username: null, // State
-    passwork: null, 
+    username: "caovietthang", // State
+    passwork: "thejohan39", 
     isLogged: false,
     setIsLogged: () => {},
     setUsername: () => {},   //setState
@@ -12,8 +12,8 @@ export const MyContext = createContext({
 });
 
 export const MyContextProvider = ({children}) => {
-    const [username, setUsername] = useState(null);
-    const [passwork, setPassWork] = useState(null);
+    const [username, setUsername] = useState("caovietthang");
+    const [passwork, setPassWork] = useState("thejohan39");
     const [isLogged, setIsLogged] = useState(false);
     return (
         <MyContext.Provider value={{
