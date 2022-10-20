@@ -24,10 +24,9 @@ function Nav() {
                             Stars Components
                         </span>
                     </a>
-                    
                 </li>
                 <li class="has-subnav">
-                    <a href="TodoList">
+                    <a href="NoteList">
                        <i class="fa fa-pencil-square-o fa-2x"></i>
                         <span class="nav-text">
                             My Note

@@ -1,15 +1,23 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { NotesContext } from '../../contexts/NotesContext';
 import '../../css/note.css'
 
 
-const Note = () => {
-    return <div class="note">
-        <span>Đang thử tạo 1 cái note để lưu trữ các cái todolist</span>
-        <div class="note-footer">
-            <small>19/10/2022</small>
-            <i class="fa fa-trash-o fa-2x"></i>
+function Note() {
+    const { noteValue, setNoteValue } = useContext(NotesContext);
+    return (
+        <div>
+            <div class="note" key={noteValue.id}>
+                {console.log(noteValue)}
+                <span value={ noteValue.text }></span>
+                <div class="note-footer">
+                    <input value={noteValue.text}></input>
+                    <small value={ noteValue.date }></small>
+                    <i class="fa fa-trash-o fa-2x"></i>
+                </div>
+            </div>
         </div>
-    </div>
+    )
 }
 
 export default Note
