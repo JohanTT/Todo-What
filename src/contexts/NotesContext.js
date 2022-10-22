@@ -4,47 +4,62 @@ import { nanoid } from 'nanoid'
 export const NotesContext = createContext ({
     noteValue: {
         id: nanoid(),
-        text: "null",
+        title: "null",
+        content: "null",
         date: "null",
         setId: () => {},
-        setText: () => {},
+        setTitle: () => {},
         setDate: () => {}
     },
     setNoteValue: () => {}
 });
 
 export const NotesContextProvider = ({children}) => {
+    const [title, setTitle] = useState('');
     const [noteValue, setNoteValue] = useState([
         {
             id: nanoid(),
-            text: "First note",
+            title: "First note",
             date: "20/10/2022"
         },
         {
             id: nanoid(),
-            text: "Second note",
+            title: "Second note",
             date: "21/10/2022"
         },
         {
             id: nanoid(),
-            text: "Third note",
+            title: "Third note",
             date: "22/10/2022"
         },
         {
             id: nanoid(),
-            text: "Fourth note",
+            title: "Fourth note",
             date: "23/10/2022"
         }
     ]);
 
-    const addNote = (text) => {
+    const addNote = (title) => {
         const date = new Date();
         const newNote = {
             id: nanoid(),
-            text: text,
+            title: title,
             date: date.toLocaleDateString()
         };
         const newNotes = [...noteValue, newNote];
+        setNoteValue(newNotes);
+    }
+
+    const editNote = (id, title) => {
+        const date = new Date();
+        const newNotes = [];
+        for (var i = 0; i < noteValue.length; i++) {
+            if (noteValue[i].id === id) {
+                noteValue[i].title = title;
+                noteValue[i].date = date.toLocaleDateString();
+            }
+            newNotes.push(noteValue[i]);
+        }
         setNoteValue(newNotes);
     }
 
@@ -53,12 +68,19 @@ export const NotesContextProvider = ({children}) => {
         setNoteValue(newNotes);
     }
 
+    const openEdit = (id) => {
+        let changeClass = document.getElementsByName(id);
+        changeClass[0].classList.add("show");
+    }
+
     return (
         <NotesContext.Provider value={{
             noteValue,
             setNoteValue,
             addNote,
-            deleteNote
+            editNote,
+            deleteNote,
+            openEdit
         }}>
             {children}
         </NotesContext.Provider>

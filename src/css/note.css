@@ -73,3 +73,15 @@ textarea:focus {
     align-items: center;
     justify-content: space-between;
 }
+
+.fix-note {
+    display: none;
+}
+
+.show .fix-note {
+    display: block;
+}
+
+span {
+    display: table;
+}
