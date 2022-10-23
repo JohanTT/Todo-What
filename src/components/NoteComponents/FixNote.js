@@ -1,9 +1,9 @@
 import React, { useContext, useState } from 'react'
 import { NotesContext } from '../../contexts/NotesContext';
 
-const FixNote = ({id}) => {
+const FixNote = ({id, oldTitle}) => {
     const { noteValue, setNoteValue, editNote } = useContext(NotesContext);
-    const [title, setTitle] = useState('');
+    const [title, setTitle] = useState(oldTitle);
 
     const handleChange = (event) => {
         setTitle(event.target.value);
@@ -20,10 +20,9 @@ const FixNote = ({id}) => {
 
   return (
     <div class="fix-note">    
-        <input class="note-edit-input" value={title} onChange={handleChange}></input>
-        <div class="note-footer">
-            <small>200 Remaining</small>
-            <button class="save" onClick={handleSaveClick}>Save</button>
+        <textarea class="note-textarea-fix" value={title} onChange={handleChange} placeholder="What's new..."></textarea>
+        <div class="note-footer-fix">
+            <button class="save-fix" onClick={handleSaveClick}>Save</button>
         </div>
     </div>
   )

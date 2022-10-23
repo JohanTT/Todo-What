@@ -70,7 +70,7 @@ export const NotesContextProvider = ({children}) => {
 
     const openEdit = (id) => {
         let changeClass = document.getElementsByName(id);
-        changeClass[0].classList.add("show");
+        changeClass[0].classList.toggle("show");
     }
 
     return (

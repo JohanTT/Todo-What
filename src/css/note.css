@@ -1,5 +1,13 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 
+body {
+    background-color: #FFDEDE;
+}
+
+::placeholder {
+    color: #413F42;
+}
+
 .note .fa-2x {
     font-size: 2em;
 }
@@ -27,13 +35,15 @@ i.fa-trash-o {
 }
 
 .note.new {
-    background-color: #67d7cc;
+    background-color: #EE6F57;
 }
 
 textarea {
     border: none;
     resize: none;
-    background-color: #67d7cc;
+    background-color: #EE6F57;
+    color: black;
+    width: 100%;
 }
 
 textarea:focus {
@@ -41,19 +51,19 @@ textarea:focus {
 }
 
 .save {
-    background-color: #e1e1e1;
+    background-color: #EB4747;
     border: none;
     border-radius: 15px;
     padding: 5px 10px 5px 10px;
 }
 
 .save:hover {
-    background-color: #ededed;
+    background-color: #F2789F;
     cursor: pointer;
 }
 
 .note {
-    background-color: #fef68a;
+    background-color: #FFC23C;
     border-radius: 10px;
     padding: 1rem;
     min-height: 170px;
@@ -74,6 +84,40 @@ textarea:focus {
     justify-content: space-between;
 }
 
+.note-footer-fix {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.note-textarea-fix {
+    border: none;
+    resize: none;    
+    border: 1px solid #EB4747;
+    border-top: 5px solid #EB4747;
+    background-color: #FFC23C;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.save-fix {
+    background-color: #EB4747;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+}
+
+.save-fix:hover {
+    background-color: #F2789F;
+    cursor: pointer;
+}
+
+textarea:focus {
+    outline: none;
+}
+
 .fix-note {
     display: none;
 }
@@ -83,5 +127,5 @@ textarea:focus {
 }
 
 span {
-    display: table;
+    word-wrap: break-word;
 }

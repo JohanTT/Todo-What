@@ -14,15 +14,14 @@ function NoteList() {
                     <div className="note" name={note.id} key={note.id} >
                         <span>
                             { note.title }
-                            <i class="fa fa-magic fa-2x" aria-hidden="true" onClick={() => {
-                            openEdit(note.id);
-                        }} ></i>
                         </span>
                         {/* Ô nhập text  */}
-                        <FixNote id={note.id} />
+                        <FixNote id={note.id} oldTitle={note.title} />
                         <div class="note-footer">
                             <small>Last update: { note.date }</small>
+                            <i class="fa fa-magic fa-2x" aria-hidden="true" onClick={() => { openEdit(note.id); }} ></i>
                             <i class="fa fa-trash-o fa-2x" onClick={() => deleteNote(note.id)}></i>
+
                         </div>
                     </div>
                 ))}
