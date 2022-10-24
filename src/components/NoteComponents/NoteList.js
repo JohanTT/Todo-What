@@ -1,13 +1,16 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import AddNote from './AddNote'
 import FixNote from './FixNote';
 import '../../css/note.css'
 import { NotesContext } from '../../contexts/NotesContext';
+import Nav from '../Nav';
 
 function NoteList() {
-    const { noteValue, setNoteValue, addNote, deleteNote, openEdit} = useContext(NotesContext);
+    const { noteValue, addNote, deleteNote, openEdit} = useContext(NotesContext);
 
     return (
+        <div>
+            <Nav />
         <div class="container">
             <div class="note-list">
                 {noteValue.map((note) => (
@@ -28,6 +31,7 @@ function NoteList() {
                 <AddNote addNote={addNote}/>
             </div>
         </div>
+    </div>
     )
 }
 

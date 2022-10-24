@@ -4,57 +4,32 @@ import '../css/nav.css'
 
 function Nav() {
   return (
-    <div>
-    <div class="area"></div>
-        <nav class="main-menu">
-            <ul>
-                <li>
-                    <a href="Home">
-                        <i class="fa fa-home fa-2x"></i>
-                        <span class="nav-text">
-                            Home
-                        </span>
-                    </a>
-                  
-                </li>
-                <li class="has-subnav">
-                    <a href="Login">
-                        <i class="fa fa-laptop fa-2x"></i>
-                        <span class="nav-text">
-                            Stars Components
-                        </span>
-                    </a>
-                </li>
-                <li class="has-subnav">
-                    <a href="NoteList">
-                       <i class="fa fa-pencil-square-o fa-2x"></i>
-                        <span class="nav-text">
-                            My Note
-                        </span>
-                    </a>
-                    
-                </li>
-                <li class="has-subnav">
-                    <a href="About">
-                       <i class="fa fa-user fa-2x"></i>
-                        <span class="nav-text">
-                            About Me
-                        </span>
-                    </a>
-                   
-                </li>
+    <div class="page">
+        {
+        window.addEventListener("load", function(){
+            var page = document.getElementsByName("showTime");
+            page.forEach(tag => {
+            tag.style.transform = "translateY(0)";
+            tag.style.transition = "1.2s 0.1s cubic-bezier(0.35, 0, 0.07, 1)";
+            });
+        })
+        }
+        <div class="page-inner">
+            <ul class="page-nav">
+                <li class="page-nav-item"><a class="page-nav-link" href="/Home"><span>
+                    <div name="showTime" class="">Home</div>
+                    </span></a></li>
+                <li class="page-nav-item"><a class="page-nav-link" href="/About"><span>
+                    <div name="showTime" class="">About Me</div>
+                    </span></a></li>
+                <li class="page-nav-item"><a class="page-nav-link" href="/NoteList"><span>
+                    <div name="showTime" class="">Take Notes</div>
+                    </span></a></li>
+                <li class="page-nav-item"><a class="page-nav-link" href="/Timeline"><span>
+                    <div name="showTime" class="">My Timeline</div>
+                    </span></a></li>
             </ul>
-            <ul class="logout">
-                <li>
-                   <a href="#">
-                         <i class="fa fa-power-off fa-2x"></i>
-                        <span class="nav-text">
-                            Logout
-                        </span>
-                    </a>
-                </li>  
-            </ul>
-        </nav>
+        </div>
     </div>
   )
 }

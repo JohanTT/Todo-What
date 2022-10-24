@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const AddNote = ({ addNote }) => {
     const [noteText, setNoteText] = useState('');
+    const date = new Date();
 
     const handleChange = (event) => {
         setNoteText(event.target.value);
@@ -19,13 +20,13 @@ const AddNote = ({ addNote }) => {
             <textarea
                 rows='8'
                 cols='10'
-                placeholder="I need to..."
+                placeholder="I need to do..."
                 value={noteText}
                 onChange={handleChange}
             >
             </textarea>
             <div class="note-footer">
-                <small>200 Remaining</small>
+                <small>To day is {date.toLocaleDateString()}</small>
                 <button class="save" onClick={handleSaveClick}>Save</button>
             </div>
         </div>

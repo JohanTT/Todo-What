@@ -1,0 +1,99 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+.text-white {
+    color: #fff !important;
+}
+/* Mở đầu phần giới thiệu bản thân */
+
+#about-me {
+    background-color: #1a1e23;
+    padding-bottom: 50px;
+}
+
+#about-me .content-section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10%;
+    padding-top: 70px;
+    justify-content:space-around;
+    align-items: center;
+    display: flex;
+}
+
+#about-me .section-heading span {
+    color: rgb(81, 187, 233);
+}
+
+#about-me .section-heading {
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 70px;
+    margin: 35px 0;
+}
+
+#about-me .ti-id-badge {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+#about-me .about-text {
+    margin-top: 4px;
+    font-size: 20px;
+    width: 500px;
+    line-height: 1.4;
+    letter-spacing: 1.5px;
+    text-align: left;
+}
+
+@media screen and (max-width: 750px) {
+    #about-me .content-section {
+      padding-top: 200px;
+      text-align: center;
+      flex-direction: column;
+    }
+  }
+
+#info > li {
+    line-height: 2.5;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+#info li:nth-child(6) {
+    background: rgb(51, 110, 189);
+}
+
+#about-me .avatar {
+    height: auto;
+    width: 450px;
+    padding-left: 30px;
+    border-radius: 4%;
+}
+
+/* Kết thúc phần giới thiệu về bản thân */
+#footer {
+    padding: 15px 15px;
+    text-align: center;
+    background-color: rgb(51, 110, 189);
+}
+
+#footer .contact-list {
+    font-size: 20px;
+}
+
+#footer .contact-list a {
+    color: #fff;
+    padding: 0 5px;
+    text-decoration: none;
+}
+
+#footer .copyright a:hover,
+#footer .contact-list a:hover {
+    color: rgba(81, 187, 233, 0.4);
+}
+
+#footer .copyright {
+    top: 15px;
+    color: #1a1e23;
+}
