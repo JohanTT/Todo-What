@@ -6,26 +6,25 @@ import { NotesContext } from '../../contexts/NotesContext';
 import Nav from '../Nav';
 
 function NoteList() {
-    const { noteValue, setNoteValue, addNote, deleteNote, openEdit} = useContext(NotesContext);
-    // useEffect(() => {
-    //     const savedNote = JSON.parse(localStorage.getItem('react-notes-app-data'));
-    //     if (savedNote) {
-    //         setNoteValue(savedNote);
-    //     }
-    //         console.log("Lần 1",savedNote);
-    // }, [])
-    // useEffect(() => {
-    //     localStorage.setItem('react-notes-app-data', JSON.stringify(noteValue));
-    // }, [noteValue])
+    const { noteValue, toggleCheckNote, addNote, deleteNote, openEdit} = useContext(NotesContext);
 
     return (
         <div>
             <Nav />
+            {
+                window.addEventListener("load", function(){
+                    noteValue.forEach(note => {
+                        var check = document.getElementsByName(note.id);
+                            if (note.check === "true") check[0].classList.add("done");
+                            else check[0].classList.remove("done");
+                    });
+                })
+            }
         <div class="container">
             <div class="note-list">
                 {noteValue.map((note) => (
-                    <div className="note" name={note.id} key={note.id} >
-                        <span>
+                    <div className="note"  name={note.id} key={note.id}>
+                        <span onClick={() => { toggleCheckNote(note.id); }}>
                             { note.title }
                         </span>
                         {/* Ô nhập text  */}

@@ -7,9 +7,11 @@ export const NotesContext = createContext ({
         title: "null",
         content: "null",
         date: "null",
+        check: "false",
         setId: () => {},
         setTitle: () => {},
-        setDate: () => {}
+        setDate: () => {},
+        setCheck: () => {}
     },
     setNoteValue: () => {}
 });
@@ -21,22 +23,26 @@ export const NotesContextProvider = ({children}) => {
         {
             id: nanoid(),
             title: "First note",
-            date: "20/10/2022"
+            date: "20/10/2022",
+            check: "true"
         },
         {
             id: nanoid(),
             title: "Second note",
-            date: "21/10/2022"
+            date: "21/10/2022",
+            check: "false"
         },
         {
             id: nanoid(),
             title: "Third note",
-            date: "22/10/2022"
+            date: "22/10/2022",
+            check: "false"
         },
         {
             id: nanoid(),
             title: "Fourth note",
-            date: "23/10/2022"
+            date: "23/10/2022",
+            check: "false"
         }
     ]);
 
@@ -49,7 +55,8 @@ export const NotesContextProvider = ({children}) => {
         const newNote = {
             id: nanoid(),
             title: title,
-            date: date.toLocaleDateString()
+            date: date.toLocaleDateString(),
+            check: "false"
         };
         const newNotes = [...noteValue, newNote];
         setNoteValue(newNotes);
@@ -62,6 +69,7 @@ export const NotesContextProvider = ({children}) => {
             if (noteValue[i].id === id) {
                 noteValue[i].title = title;
                 noteValue[i].date = date.toLocaleDateString();
+                noteValue[i].check = "false"
             }
             newNotes.push(noteValue[i]);
         }
@@ -70,6 +78,26 @@ export const NotesContextProvider = ({children}) => {
 
     const deleteNote = (id) => {
         const newNotes = noteValue.filter((noteValue) => noteValue.id !== id);
+        setNoteValue(newNotes);
+    }
+
+    const toggleCheckNote = (id) => {
+        const newNotes = [];
+        for (var i = 0; i < noteValue.length; i++) {
+            if (noteValue[i].id === id) {
+                const CheckNote = document.getElementsByName(id);
+                if (noteValue[i].check === "true") 
+                {
+                    CheckNote[0].classList.remove("done");
+                    noteValue[i].check = "false";
+                }
+                else {
+                    CheckNote[0].classList.add("done");
+                    noteValue[i].check = "true";
+                }
+            }
+            newNotes.push(noteValue[i]);
+        }
         setNoteValue(newNotes);
     }
 
@@ -85,7 +113,8 @@ export const NotesContextProvider = ({children}) => {
             addNote,
             editNote,
             deleteNote,
-            openEdit
+            openEdit,
+            toggleCheckNote
         }}>
             {children}
         </NotesContext.Provider>

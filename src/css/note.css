@@ -2,13 +2,14 @@
 
 @media screen and (max-width: 750px) {
     .container {
-      padding-top: 230px !important;
+        padding-top: 230px !important;
     }
-  }
+}
 
-html{
+body{
     background-color: rgb(32, 45, 58);
 }
+
 ::placeholder {
     color: #413F42;
 }
@@ -73,7 +74,17 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: all .2s ease-in-out; 
+    transition: all 0.4s cubic-bezier(0.35, 0, 0.07, 1) 0.1s;; 
+}
+
+.note.done span {
+    text-decoration: line-through;
+}
+
+.note.done {
+    opacity: 0.5;
+    transform: scale(0.95); 
+    box-shadow: 5px 5px 7px 0px rgb(81, 187, 233), -5px -5px 7px 0px rgb(81, 187, 233);
 }
 
 .note:hover {
@@ -130,4 +141,6 @@ textarea:focus {
 
 span {
     word-wrap: break-word;
+    padding: 5px 0;
+    cursor: pointer;
 }
