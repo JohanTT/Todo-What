@@ -20,13 +20,13 @@ function Nav() {
                     <div name="showTime" class="">Home</div>
                     </span></a></li>
                 <li class="page-nav-item"><a class="page-nav-link" href="/About"><span>
-                    <div name="showTime" class="">About Me</div>
+                    <div name="showTime" class="">AboutMe</div>
                     </span></a></li>
                 <li class="page-nav-item"><a class="page-nav-link" href="/NoteList"><span>
-                    <div name="showTime" class="">Take Notes</div>
+                    <div name="showTime" class="">TakeNotes</div>
                     </span></a></li>
                 <li class="page-nav-item"><a class="page-nav-link" href="/Timeline"><span>
-                    <div name="showTime" class="">My Timeline</div>
+                    <div name="showTime" class="">Timeline</div>
                     </span></a></li>
             </ul>
         </div>

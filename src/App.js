@@ -12,8 +12,8 @@ function App() {
   return (
     <div className="CVT-app">
       <MyContextProvider>
-        <NotesContextProvider>
           <BrowserRouter>
+          <NotesContextProvider>
             <Routes>
               <Route exact path='/' element={ <Home/> } />
               <Route exact path='/Home' element={ <Home/> } />
@@ -21,8 +21,8 @@ function App() {
               <Route exact path='/About' element={ <About /> } />
               <Route exact path='/NoteList' element={ <NoteList /> } />
             </Routes>
+          </NotesContextProvider>
           </BrowserRouter>
-        </NotesContextProvider>
       </MyContextProvider>
     </div>
   );

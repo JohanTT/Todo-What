@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import AddNote from './AddNote'
 import FixNote from './FixNote';
 import '../../css/note.css'
@@ -6,7 +6,17 @@ import { NotesContext } from '../../contexts/NotesContext';
 import Nav from '../Nav';
 
 function NoteList() {
-    const { noteValue, addNote, deleteNote, openEdit} = useContext(NotesContext);
+    const { noteValue, setNoteValue, addNote, deleteNote, openEdit} = useContext(NotesContext);
+    // useEffect(() => {
+    //     const savedNote = JSON.parse(localStorage.getItem('react-notes-app-data'));
+    //     if (savedNote) {
+    //         setNoteValue(savedNote);
+    //     }
+    //         console.log("Lần 1",savedNote);
+    // }, [])
+    // useEffect(() => {
+    //     localStorage.setItem('react-notes-app-data', JSON.stringify(noteValue));
+    // }, [noteValue])
 
     return (
         <div>

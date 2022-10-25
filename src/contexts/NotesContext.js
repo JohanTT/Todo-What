@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useState, useEffect } from 'react'
 import { nanoid } from 'nanoid'
 
 export const NotesContext = createContext ({
@@ -16,7 +16,8 @@ export const NotesContext = createContext ({
 
 export const NotesContextProvider = ({children}) => {
     const [title, setTitle] = useState('');
-    const [noteValue, setNoteValue] = useState([
+    const [noteValue, setNoteValue] = useState(JSON.parse(localStorage.getItem('notes')) || 
+    [
         {
             id: nanoid(),
             title: "First note",
@@ -39,6 +40,10 @@ export const NotesContextProvider = ({children}) => {
         }
     ]);
 
+    useEffect(() => {
+        localStorage.setItem('notes', JSON.stringify(noteValue));
+    }, [noteValue])
+    
     const addNote = (title) => {
         const date = new Date();
         const newNote = {
