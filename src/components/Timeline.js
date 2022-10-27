@@ -12,11 +12,9 @@ function Timeline() {
             <div class="card">
               <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(135).webp" class="card-img-top"></img>
               <div class="card-body p-4">
-                <h4 class="fw-bold mb-4">Ut enim ad minim veniam</h4>
-                <p class="text-muted mb-4"><i class="fa fa-clock-o" aria-hidden="true"></i> 2017</p>
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h4 class="fw-bold mb-4"> Học tại trường Tiểu học Trương Văn Ngài</h4>
+                <p class="text-muted mb-4"><i class="fa fa-clock-o" aria-hidden="true"></i> 2007 - 2012</p>
+                <p class="mb-0"></p>
               </div>
             </div>
           </div>
@@ -24,13 +22,9 @@ function Timeline() {
             <div class="card">
               <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(129).webp" class="card-img-top"></img>
               <div class="card-body p-4">
-                <h4 class="fw-bold mb-4">Duis aute irure dolor</h4>
-                <p class="text-muted mb-4"><i class="fa fa-clock-o" aria-hidden="true"></i> 2016</p>
-                <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                  architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                  aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-                  sequi nesciunt.</p>
+                <h4 class="fw-bold mb-4"> Học tại trường THCS Đỗ Văn Dậy</h4>
+                <p class="text-muted mb-4"><i class="fa fa-clock-o" aria-hidden="true"></i> 2012 - 2017</p>
+                <p class="mb-0"></p>
               </div>
             </div>
           </div>
@@ -38,14 +32,9 @@ function Timeline() {
             <div class="card">
               <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(131).webp" class="card-img-top"></img>
               <div class="card-body p-4">
-                <h4 class="fw-bold mb-4">Sed ut nihil unde omnis</h4>
-                <p class="text-muted mb-4"><i class="fa fa-clock-o" aria-hidden="true"></i> 2015</p>
-                <p class="mb-0">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                  adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-                  aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-                  suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
-                  reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
-                  dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <h4 class="fw-bold mb-4"> Học tại trường THPT Phạm Văn Sáng</h4>
+                <p class="text-muted mb-4"><i class="fa fa-clock-o" aria-hidden="true"></i> 2017 - 2020</p>
+                <p class="mb-0"></p>
               </div>
             </div>
           </div>
@@ -53,12 +42,9 @@ function Timeline() {
             <div class="card">
               <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(125).webp" class="card-img-top"></img>
               <div class="card-body p-4">
-                <h4 class="fw-bold mb-4"> Quis autem vel eum voluptate</h4>
-                <p class="text-muted mb-4"><i class="fa fa-clock-o" aria-hidden="true"></i> 2014</p>
-                <p class="mb-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                  praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-                  occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi,
-                  id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                <h4 class="fw-bold mb-4"> Đỗ vào trường Đại học Sư Phạm Tp. HCM <br></br>Ngành: Công nghệ thông tin</h4>
+                <p class="text-muted mb-4"><i class="fa fa-clock-o" aria-hidden="true"></i> 2020</p>
+                <p class="mb-0">Sau khi trải qua 3 năm cấp 3, bản thân nhận thấy tiềm năng phát triển của bản thân đối với các thiết bị máy tính và phần mềm, bản thân quyết định chọn vào theo học ngành được coi là "hot" nhất trong năm đó.</p>
               </div>
             </div>
           </div>
@@ -66,12 +52,29 @@ function Timeline() {
             <div class="card">
               <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(144).webp" class="card-img-top"></img>
               <div class="card-body p-4">
-                <h4 class="fw-bold mb-4">Mussum ipsum cacilds</h4>
-                <p class="text-muted mb-4"><i class="fa fa-clock-o" aria-hidden="true"></i> 2013</p>
-                <p class="mb-0">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus
-                  saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum
-                  hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut
-                  perferendis doloribus asperiores repellat.</p>
+                <h4 class="fw-bold mb-4">Năm 1<br></br>Ngành: Công nghệ thông tin</h4>
+                <p class="text-muted mb-4"><i class="fa fa-clock-o" aria-hidden="true"></i> 2020 - 2021</p>
+                <p class="mb-0"></p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-2 right-2">
+            <div class="card">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(125).webp" class="card-img-top"></img>
+              <div class="card-body p-4">
+                <h4 class="fw-bold mb-4"> Năm 2<br></br>Ngành: Công nghệ thông tin</h4>
+                <p class="text-muted mb-4"><i class="fa fa-clock-o" aria-hidden="true"></i> 2021 - 2022</p>
+                <p class="mb-0"></p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-2 left-2">
+            <div class="card">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(144).webp" class="card-img-top"></img>
+              <div class="card-body p-4">
+                <h4 class="fw-bold mb-4">Năm 3<br></br>Ngành: Công nghệ thông tin</h4>
+                <p class="text-muted mb-4"><i class="fa fa-clock-o" aria-hidden="true"></i> 2022 - Present</p>
+                <p class="mb-0"></p>
               </div>
             </div>
           </div>
