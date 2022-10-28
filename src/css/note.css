@@ -29,7 +29,7 @@ body{
     margin: 0 10%;
     padding: 15px;
     height: 100%;
-    padding-top: 100px;
+    padding-top: 140px;
 }
 
 .note-list {
@@ -84,7 +84,7 @@ textarea:focus {
 .note.done {
     opacity: 0.5;
     transform: scale(0.95); 
-    box-shadow: 5px 5px 7px 0px rgb(81, 187, 233), -5px -5px 7px 0px rgb(81, 187, 233);
+    box-shadow: 0 0 10px #2196f3, 0 0 30px #2196f3, 0 0 60px #2196f3;
 }
 
 .note:hover {

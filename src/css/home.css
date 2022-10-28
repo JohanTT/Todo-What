@@ -36,6 +36,7 @@ p {
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color: #ccc;
   transform: translateY(102%);
 }
 .menu .images {

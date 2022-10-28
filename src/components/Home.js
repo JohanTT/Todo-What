@@ -1,6 +1,10 @@
 import React from 'react'
 import '../css/home.css'
-import Nav from './Nav';
+import Nav from './Nav'
+import LTWin from '../image/timeline pic/LTWin2.png'
+import LTWeb from '../image/timeline pic/WEB2.png'
+import Phone from '../image/timeline pic/Phone.png'
+import LTDT from '../image/timeline pic/LTDT.png'
 
 function Home() {
   return (
@@ -12,16 +16,16 @@ function Home() {
             </div>
             <div class="images">
               <a class="image-link">
-                <div class="image" data-label="Star"><img src="https://i.loli.net/2019/11/23/cnKl1Ykd5rZCVwm.jpg" alt="" name="showTime" class=""></img></div>
+                <div class="image" data-label="My"><img src={LTDT} alt="" name="showTime" class=""></img></div>
               </a>
               <a class="image-link">
-                <div class="image" data-label="Sun"><img src="https://i.loli.net/2019/11/16/FLnzi5Kq4tkRZSm.jpg" alt="" name="showTime" class=""></img></div>
+                <div class="image" data-label="Best"><img src={Phone} alt="" name="showTime" class=""></img></div>
               </a>
               <a class="image-link">
-                <div class="image" data-label="Tree"><img src="https://i.loli.net/2019/10/18/uXF1Kx7lzELB6wf.jpg" alt="" name="showTime" class=""></img></div>
+                <div class="image" data-label="Projects"><img src={LTWin} alt="" name="showTime" class=""></img></div>
               </a>
               <a class="image-link">
-                <div class="image" data-label="Sky"><img src="https://i.loli.net/2019/10/18/buDT4YS6zUMfHst.jpg" alt="" name="showTime" class=""></img></div>
+                <div class="image" data-label="as Leader"><img src={LTWeb} alt="" name="showTime" class=""></img></div>
               </a>
             </div>
           </div>

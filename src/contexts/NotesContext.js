@@ -22,27 +22,27 @@ export const NotesContextProvider = ({children}) => {
     [
         {
             id: nanoid(),
-            title: "First note",
+            title: "Click on the text to mark note done",
             date: "20/10/2022",
             check: "true"
         },
         {
             id: nanoid(),
-            title: "Second note",
+            title: "I can also delete and update note",
             date: "21/10/2022",
             check: "false"
         },
         {
             id: nanoid(),
-            title: "Third note",
+            title: "Okay, let's get started",
             date: "22/10/2022",
             check: "false"
         },
         {
             id: nanoid(),
-            title: "Fourth note",
+            title: "Feet for my cat",
             date: "23/10/2022",
-            check: "false"
+            check: "true"
         }
     ]);
 

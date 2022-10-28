@@ -22,7 +22,7 @@ function about() {
                           <li>Đang học tại: Trường Đại Học Sư Phạm TP.HCM</li>
                           <li>Ngành học: Công nghệ thông tin</li>
                       </ul>
-                      <p class="about-text">Là một sinh viên năm hai đang chững chạc chuẩn bị bước ra đời. Tuy gặp nhiều khó khăn, vất vả  nhưng cũng vì vậy mà bản thân luôn cố gắng hết mình. Mục tiêu chính là trở thành một lập trình viên chuyên nghiệp với đầy đủ kiến thức chuyên môn.</p>
+                      <p class="readmonre">ReadMore <a class="about-text" href='https://johantt.github.io/First-CV/' target="_blank">MyCV</a></p>
                   </div>
                   <img src={Picture} alt="Ảnh đại diện" class="avatar"></img>
               </div>

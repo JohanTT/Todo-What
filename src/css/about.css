@@ -37,12 +37,12 @@
 }
 
 #about-me .about-text {
-    margin-top: 4px;
     font-size: 20px;
-    width: 500px;
     line-height: 1.4;
     letter-spacing: 1.5px;
-    text-align: left;
+    text-decoration: none;
+    color: rgb(81, 187, 233);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 750px) {
@@ -69,6 +69,10 @@
     width: 450px;
     padding-left: 30px;
     border-radius: 4%;
+}
+
+#about-me .readmore p {
+    color: #ccc;
 }
 
 /* Kết thúc phần giới thiệu về bản thân */
