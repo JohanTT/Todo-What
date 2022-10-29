@@ -22,7 +22,7 @@ function about() {
                           <li>Đang học tại: Trường Đại Học Sư Phạm TP.HCM</li>
                           <li>Ngành học: Công nghệ thông tin</li>
                       </ul>
-                      <p class="readmonre">ReadMore <a class="about-text" href='https://johantt.github.io/First-CV/' target="_blank">MyCV</a></p>
+                      <p class="readmonre">ReadMore <a class="about-text" href='https://johantt.github.io/First-CV/' target="_blank" rel="noreferrer">MyCV</a></p>
                   </div>
                   <img src={Picture} alt="Ảnh đại diện" class="avatar"></img>
               </div>

@@ -17,7 +17,6 @@ export const NotesContext = createContext ({
 });
 
 export const NotesContextProvider = ({children}) => {
-    const [title, setTitle] = useState('');
     const [noteValue, setNoteValue] = useState(JSON.parse(localStorage.getItem('notes')) || 
     [
         {

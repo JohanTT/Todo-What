@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { NotesContext } from '../../contexts/NotesContext';
 
 const FixNote = ({id, oldTitle}) => {
-    const { noteValue, setNoteValue, editNote } = useContext(NotesContext);
+    const { editNote } = useContext(NotesContext);
     const [title, setTitle] = useState(oldTitle);
 
     const handleChange = (event) => {
