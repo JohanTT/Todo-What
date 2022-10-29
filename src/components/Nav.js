@@ -9,8 +9,8 @@ function Nav() {
         window.addEventListener("load", function(){
             var page = document.getElementsByName("showTime");
             page.forEach(tag => {
-            tag.style.transform = "translateY(0)";
-            tag.style.transition = "1.2s 0.1s cubic-bezier(0.35, 0, 0.07, 1)";
+                tag.style.transform = "translateY(0)";
+                tag.style.transition = "1.2s 0.1s cubic-bezier(0.35, 0, 0.07, 1)";
             });
         })
         }

@@ -23,7 +23,7 @@ export const NotesContextProvider = ({children}) => {
             id: nanoid(),
             title: "Click on the text to mark note done",
             date: "20/10/2022",
-            check: "true"
+            check: "false"
         },
         {
             id: nanoid(),
@@ -41,7 +41,7 @@ export const NotesContextProvider = ({children}) => {
             id: nanoid(),
             title: "Feet for my cat",
             date: "23/10/2022",
-            check: "true"
+            check: "false"
         }
     ]);
 

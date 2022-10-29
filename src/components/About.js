@@ -6,7 +6,7 @@ import Picture from '../image/CVT.webp'
 function about() {
   return (
     <div>
-      <Nav />
+        <Nav/>
         <div id="CVT-CV">
           <div id="about-me">
               {/* <!-- đôi lời về bản thân --> */}

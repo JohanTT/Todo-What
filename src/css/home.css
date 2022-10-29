@@ -37,7 +37,7 @@ p {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #ccc;
-  transform: translateY(102%);
+  /* transform: translateY(102%); */
 }
 .menu .images {
   margin-top: 36px;
@@ -88,7 +88,7 @@ p {
 }
 .menu .images img {
   height: 350px; 
-  transform: translateY(102%);
+  /* transform: translateY(102%); */
 }
 .menu .images .image-link:nth-child(1) img {
   transition-delay: 0.18s !important;

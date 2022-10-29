@@ -14,8 +14,8 @@ import CNPM from '../image/timeline pic/CNPM.png'
 function Timeline() {
   return (    
     <div>
+      <Nav></Nav>
       <div class="container py-5">
-      <Nav />
         <div class="main-timeline-2">
           <div class="timeline-2 left-2">
             <div class="card">

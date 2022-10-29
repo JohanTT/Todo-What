@@ -10,25 +10,25 @@ function Home() {
   return (
     <div class="menu">
       <Nav/>
-          <div class="gallery">
-            <div class="title">
-              <p name="showTime" class="">CAO VIET THANG - Johan</p>
-            </div>
-            <div class="images">
-              <a class="image-link" href='https://github.com/JohanTT/LTDT-2.3' target="_blank" rel="noreferrer">
-                <div class="image" data-label="My"><img src={LTDT} alt="" name="showTime" ></img></div>
-              </a>
-              <a class="image-link" href='https://github.com/JohanTT/CTQM-Phone-Final/tree/final' target="_blank" rel="noreferrer">
-                <div class="image" data-label="Best"><img src={Phone} alt="" name="showTime" ></img></div>
-              </a>
-              <a class="image-link" href='https://github.com/JohanTT/CTQM-Shoes' target="_blank" rel="noreferrer">
-                <div class="image" data-label="Projects"><img src={LTWin} alt="" name="showTime" ></img></div>
-              </a>
-              <a class="image-link" href='https://github.com/JohanTT/CTQM-WEB-Done/tree/master' target="_blank" rel="noreferrer">
-                <div class="image" data-label="as Leader"><img src={LTWeb} alt="" name="showTime" ></img></div>
-              </a>
-            </div>
-          </div>
+      <div class="gallery">
+        <div class="title">
+          <p name="showTime" class="">CAO VIET THANG - Johan</p>
+        </div>
+        <div class="images">
+          <a class="image-link" href='https://github.com/JohanTT/LTDT-2.3' target="_blank" rel="noreferrer">
+            <div class="image" data-label="My"><img src={LTDT} alt="" name="showTime" ></img></div>
+          </a>
+          <a class="image-link" href='https://github.com/JohanTT/CTQM-Phone-Final/tree/final' target="_blank" rel="noreferrer">
+            <div class="image" data-label="Best"><img src={Phone} alt="" name="showTime" ></img></div>
+          </a>
+          <a class="image-link" href='https://github.com/JohanTT/CTQM-Shoes' target="_blank" rel="noreferrer">
+            <div class="image" data-label="Projects"><img src={LTWin} alt="" name="showTime" ></img></div>
+          </a>
+          <a class="image-link" href='https://github.com/JohanTT/CTQM-WEB-Done/tree/master' target="_blank" rel="noreferrer">
+            <div class="image" data-label="as Leader"><img src={LTWeb} alt="" name="showTime" ></img></div>
+          </a>
+        </div>
+      </div>
     </div>
   )
 }

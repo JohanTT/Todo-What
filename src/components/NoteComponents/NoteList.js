@@ -10,7 +10,7 @@ function NoteList() {
 
     return (
         <div>
-            <Nav />
+            <Nav/>
             {
                 window.addEventListener("load", function(){
                     noteValue.forEach(note => {

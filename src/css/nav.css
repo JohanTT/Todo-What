@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
 .page {
-  position: fixed;
+  position: absolute;
   padding: 25px 10%;
   left: 0;
   width: 100%;
@@ -39,7 +39,7 @@
   overflow: hidden;
 }
 .page-nav-link span div {
-    transform: translateY(102%);
+    /* transform: translateY(102%); */
 }
 .page-nav-link::after {
   position: absolute;
