@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.99ba79d8.css",
-    "main.js": "/static/js/main.770178e2.js",
-    "static/media/THCS.jpg": "/static/media/THCS.2fc1e513d24452daed26.jpg",
-    "static/media/LTWEB.png": "/static/media/LTWEB.8b259ec66fd1ef652e34.png",
-    "static/media/DH.png": "/static/media/DH.9e7258b4f9b35a0432c7.png",
-    "static/media/CVT.webp": "/static/media/CVT.b2632629b1a4b9d7ac66.webp",
-    "static/media/LTWin.png": "/static/media/LTWin.7d2e93ae998ceef2719b.png",
-    "static/media/Nam1.png": "/static/media/Nam1.4d90a850eb8a152d7923.png",
-    "static/media/THPT.jpg": "/static/media/THPT.af6d12bdc49316a42d52.jpg",
-    "static/media/LTWin2.png": "/static/media/LTWin2.34151be85c0727e75faa.png",
-    "static/media/WEB2.png": "/static/media/WEB2.551a93827ebf275194ed.png",
-    "static/media/TieuHoc.jpg": "/static/media/TieuHoc.000973e4a7b483e03440.jpg",
-    "static/media/CNPM.png": "/static/media/CNPM.4688e1d958b7b1651554.png",
-    "static/media/Phone.png": "/static/media/Phone.3b2f900e6b9705e91504.png",
-    "static/media/LTDT.png": "/static/media/LTDT.20d85e432578aab9efbe.png",
-    "index.html": "/index.html",
-    "main.99ba79d8.css.map": "/static/css/main.99ba79d8.css.map",
-    "main.770178e2.js.map": "/static/js/main.770178e2.js.map"
+    "main.css": "/Todo-What/static/css/main.61ed3ffe.css",
+    "main.js": "/Todo-What/static/js/main.5b9a99cd.js",
+    "static/media/THCS.jpg": "/Todo-What/static/media/THCS.2fc1e513d24452daed26.jpg",
+    "static/media/LTWEB.png": "/Todo-What/static/media/LTWEB.8b259ec66fd1ef652e34.png",
+    "static/media/DH.png": "/Todo-What/static/media/DH.9e7258b4f9b35a0432c7.png",
+    "static/media/CVT.webp": "/Todo-What/static/media/CVT.b2632629b1a4b9d7ac66.webp",
+    "static/media/LTWin.png": "/Todo-What/static/media/LTWin.7d2e93ae998ceef2719b.png",
+    "static/media/Nam1.png": "/Todo-What/static/media/Nam1.4d90a850eb8a152d7923.png",
+    "static/media/THPT.jpg": "/Todo-What/static/media/THPT.af6d12bdc49316a42d52.jpg",
+    "static/media/LTWin2.png": "/Todo-What/static/media/LTWin2.34151be85c0727e75faa.png",
+    "static/media/WEB2.png": "/Todo-What/static/media/WEB2.551a93827ebf275194ed.png",
+    "static/media/TieuHoc.jpg": "/Todo-What/static/media/TieuHoc.000973e4a7b483e03440.jpg",
+    "static/media/CNPM.png": "/Todo-What/static/media/CNPM.4688e1d958b7b1651554.png",
+    "static/media/Phone.png": "/Todo-What/static/media/Phone.3b2f900e6b9705e91504.png",
+    "static/media/LTDT.png": "/Todo-What/static/media/LTDT.20d85e432578aab9efbe.png",
+    "index.html": "/Todo-What/index.html",
+    "main.61ed3ffe.css.map": "/Todo-What/static/css/main.61ed3ffe.css.map",
+    "main.5b9a99cd.js.map": "/Todo-What/static/js/main.5b9a99cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.99ba79d8.css",
-    "static/js/main.770178e2.js"
+    "static/css/main.61ed3ffe.css",
+    "static/js/main.5b9a99cd.js"
   ]
 }
