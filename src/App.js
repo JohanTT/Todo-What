@@ -20,6 +20,11 @@ function App() {
               <Route exact path='/Timeline' element={ <Timeline/> } />
               <Route exact path='/About' element={ <About /> } />
               <Route exact path='/NoteList' element={ <NoteList /> } />
+              <Route exact path='Todo-What/' element={ <Home/> } />
+              <Route exact path='Todo-What/Home' element={ <Home/> } />
+              <Route exact path='Todo-What/Timeline' element={ <Timeline/> } />
+              <Route exact path='Todo-What/About' element={ <About /> } />
+              <Route exact path='Todo-What/NoteList' element={ <NoteList /> } />
             </Routes>
           </NotesContextProvider>
           </BrowserRouter>
